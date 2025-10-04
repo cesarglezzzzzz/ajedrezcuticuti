@@ -89,7 +89,7 @@ let turn = 'w';
 let castling = { wK: true, wQ: true, bK: true, bQ: true };
 let enPassant = null; // {r, c}
 let startTime = 0;
-let timeLimit = 15000;
+let timeLimit = 30000;
 
 // Opening Book con FEN completo
 const openingBook = [
@@ -607,4 +607,5 @@ function isOpponent(p1, p2) {
 }
 
 function inBounds(r, c) { return r >= 0 && r < 8 && c >= 0 && c < 8; }
+
 function pieceValue(piece) { return piece ? pieceValues[piece.toLowerCase()] : 0; }
