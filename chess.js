@@ -157,7 +157,7 @@ function aiTurn(){
     turn: 'b',
     castling: { ...castling },
     enPassant: enPassant,
-    depth: 6   
+    depth: 8   
   });
 }
 
@@ -427,4 +427,5 @@ function isSquareAttacked(square, byColor) {
 }
 
 // --- Inicia ---
+
 initBoard();
